@@ -1,0 +1,76 @@
+pythonda eleman ekleme 
+
+liste=["adana","mersin"]
+indexs = int(input("kacıncı sıraya ekleme yapalım")
+eleman  = input("eleman giriniz")
+liste . insert (indexs,eleman)
+print(liste)
+
+
+
+u4 
+
+#adı ders 
+
+ders = ['B','İ','L','İ','Ş','İ','M']
+a) listeyi alfabetik olarak sırala
+
+ders.sorted = sorted(ders)
+print ( " testen yazdırılmıs lişte" ,ders.sorted=
+
+b)listeyi tersten yazdırma 
+ders.reversed = ders[::-1]
+print("tersten yazdırılmıs lişte
+
+c) listede kaçtane 'İ' elemanı var oldugunu bulmak 
+
+count_I = ders.count('İ')
+print(" listede 'İ' elemanı sayısı ", count_I)
+
+ç) gerekli elemanları silerek listeyi 'B''İ''L''İ''M' yapmak
+filtered.ders = [eleman for eleman in ders if eleman in ['B','İ','L','İ','M']
+
+d) ders listesini alan listesine kopyala
+alan=ders.copy()
+print("alan listesi", alan )
+
+e) listenin tüm elemanlarını silme
+ders.clear()
+print(ders)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
