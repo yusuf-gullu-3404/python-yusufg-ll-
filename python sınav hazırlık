@@ -38,6 +38,441 @@ e) listenin tüm elemanlarını silme
 ders.clear()
 print(ders)
 
+f)  'L' elemanı indeksi bulma 
+if 'L' in ders
+
+index.L = none 
+print(index.L)
+
+çalısan kütüphane kodları
+
+kitap_isimleri = ["kiraz agacı","endülüs","kabe","sscb  ",]
+sayfa_sayıları = [ 203,123,984,564]
+aranacak_kitap = input("hangi kitabı arıyorsunuz ")
+if aranacak_kitap in kitaplar
+siraNo =nkitap_isimleri.index(aranacak_kitap)
+print(aranacak kitap ,"kütüphanede var ",sayfa_sayıları [siraNo] " sayfadır")
+
+else : 
+print("aranacak kitap bizde yok")
+
+e-okul not girisi
+
+mepuan1=int(input("mehmet 1.mat notunu gir)
+mepuan2=int(input("mehmet 2.mat notunu gir)
+toplam1=(mepuan1 + mepuan2)
+islem1= ( toplam 1//2)
+print(f"mehmet{islem1} ortalamaya sahip")
+
+gecen sınavın soruları
+
+1.# Kullanıcıdan üçgenin kenar uzunluklarını alalım
+a = float(input("Birinci kenarın uzunluğunu girin: "))
+b = float(input("İkinci kenarın uzunluğunu girin: "))
+c = float(input("Üçüncü kenarın uzunluğunu girin: "))
+
+# Üçgenin türünü belirleyelim
+if a == b == c:
+    print("Bu bir Eşkenar üçgendir.")
+elif a == b or b == c or a == c:
+    print("Bu bir İkizkenar üçgendir.")
+else:
+    print("Bu bir Çeşitkenar üçgendir.")
+
+
+2.# Kullanıcıdan bagaj ağırlığını alıyoruz
+bagaj_agirligi =float(input("Bagajınızın ağırlığını kilogram cinsinden girin: "))
+
+# 20 kg'ye kadar ücret alınmaz, 20 kg'dan fazla olan bagajlar için ek ücret hesaplanır
+if bagaj_agirligi <= 20:
+    print("Bagajınız 20 kg veya daha az. Herhangi bir ücret ödemeniz gerekmiyor.")
+else:
+    fazla_bagaj = bagaj_agirligi - 20  # 20 kg'dan fazla olan kısmı hesaplıyoruz
+    ucret = fazla_bagaj * 10  # Her kilogram için 10 TL ücret
+    print(f"Fazla bagaj için {ucret} TL ödemeniz gerekmektedir.")
+# Meslek kategorileriyle bir sözlük tanımlıyoruz
+meslekler = {
+    "Teknoloji": ["Yazılımcı", "Sistem Yöneticisi", "Veri Bilimci"],
+    "Sağlık": ["Doktor", "Hemşire", "Eczacı"],
+    "Eğitim": ["Öğretmen", "Okul Müdürü", "Rehberlik Uzmanı"],
+    "Sanayi": ["usta", "çırak", "motor"],
+    "ticaret": ["Yönetici", "Mühendis", "Pazarlama Uzmanı"]
+}
+
+3.# Meslek kategorileriyle bir sözlük tanımlıyoruz
+meslekler = {
+    "Teknoloji": ["Yazılımcı", "Sistem Yöneticisi", "Veri Bilimci"],
+    "Sağlık": ["Doktor", "Hemşire", "Eczacı"],
+    "Eğitim": ["Öğretmen", "Okul Müdürü", "Rehberlik Uzmanı"],
+    "Sanayi": ["usta", "çırak", "motor"],
+    "ticaret": ["Yönetici", "Mühendis", "Pazarlama Uzmanı"]
+}
+
+# Kategorilerin listesini ekrana yazdıralım
+print("Meslek Kategorileri:")
+for kategori in meslekler:
+    print(f"- {kategori}")
+ 
+ 4. plakalar = []
+
+plaka1 = input("1. plaka numarasını girin: ")
+plakalar.append(plaka1)
+
+plaka2 = input("2. plaka numarasını girin: ")
+plakalar.append(plaka2)
+
+plaka3 = input("3. plaka numarasını girin: ")
+plakalar.append(plaka3)
+
+plaka4 = input("4. plaka numarasını girin: ")
+plakalar.append(plaka4)
+
+plaka5 = input("5. plaka numarasını girin: ")
+plakalar.append(plaka5)
+#a)
+plakalar_sorted = sorted(plakalar)
+print("\nListe küçükten büyüğe sıralandı:")
+print(plakalar_sorted)
+
+# b)
+plakalar_reverse = sorted(plakalar, reverse=True)
+print("\nListe tersten sıralandı:")
+print(plakalar_reverse)
+
+# c)
+aranan_plaka = input("\nAradığınız plakanın numarasını girin: ")
+if aranan_plaka in plakalar:
+    index = plakalar.index(aranan_plaka)
+    print(f"{aranan_plaka} plakasının index'i: {index}")
+else:
+    print(f"{aranan_plaka} plaka listede bulunamadı.")
+
+5. # Kullanıcıdan otoparkta kalınan saat sayısını alıyoruz
+süre = float(input("Otoparkta kaç saat kaldınız? "))
+
+# Ücreti hesaplamak için şartlar
+if süre <= 1:
+    ucret = 5  
+elif 1 < süre <= 5:
+    ucret = (süre) * 4 
+else:
+    ucret = (süre) * 3 
+
+# Ödenecek ücreti ekrana yazdıralım
+print(f"Otoparkta {süre} saat kaldınız. Ödemeniz gereken ücret: {ucret} TL.")
+
+
+6.# Kullanıcıdan gerekli bilgileri alıyoruz
+ad = input("Adınızı girin: ")
+maas = float(input("Maaşınızı girin: "))
+calisma_yili = int(input("Çalışma yılınızı girin: "))
+
+# Zam hesaplamak
+if 0 <= calisma_yili <= 5:
+    zam = 100
+elif 6 <= calisma_yili <= 10:
+    zam = 150
+else:
+    zam = 250
+
+# Zamlı maaşı hesaplıyoruz
+yeni_maas = maas + zam
+
+# Sonuçları ekrana yazdırıyoruz
+print(f"Sayın {ad}, zamlı maaşınız: {yeni_maas} TL'ye çıktı.")
+
+
+7. 
+kitaplar = {
+    "Kitap 1": {"isim": "Kitap Adı 1", "tür": "Roman"},
+    "Kitap 2": {"isim": "Kitap Adı 2", "tür": "Bilim Kurgu"},
+    "Kitap 3": {"isim": "Kitap Adı 3", "tür": "biyografi"},
+    "Kitap 4": {"isim": "Kitap Adı 4", "tür": "Felsefe"},
+    "Kitap 5": {"isim": "Kitap Adı 5", "tür": "cizgi roman"}
+}
+
+
+kitap_turleri = []
+
+
+for kitap in kitaplar:
+    kitap_turu = kitaplar[kitap]["tür"]
+    if kitap_turu not in kitap_turleri:
+        kitap_turleri.append(kitap_turu)
+
+# Türlerin listesi
+print("Okuduğunuz kitap türleri:")
+for tur in kitap_turleri:
+    print(tur)
+8.# Kullanıcıdan 5 sayı girmesini istiyoruz
+sayilar = []
+
+# 5 sayıyı manuel olarak listeye ekliyoruz
+sayi1 = int(input("1. sayıyı girin: "))
+sayi2 = int(input("2. sayıyı girin: "))
+sayi3 = int(input("3. sayıyı girin: "))
+sayi4 = int(input("4. sayıyı girin: "))
+sayi5 = int(input("5. sayıyı girin: "))
+
+# Sayıları tek tek listeye ekliyoruz
+sayilar.append(sayi1)
+sayilar.append(sayi2)
+sayilar.append(sayi3)
+sayilar.append(sayi4)
+sayilar.append(sayi5)
+
+# a) Listeyi büyükten küçüğe sıralıyoruz
+sayilar_büyükten_küçüğe = sorted(sayilar, reverse=True)
+
+# b) Listeyi tersten yazdırıyoruz
+sayilar_tersten = list(reversed(sayilar))
+
+# c) Kullanıcıdan aranacak sayıyı alıyoruz ve indexini buluyoruz
+aranan_sayi = int(input("Aramak istediğiniz sayıyı girin: "))
+if aranan_sayi in sayilar:
+    index = sayilar.index(aranan_sayi)
+    print(f"{aranan_sayi} sayısının indexi: {index}")
+else:
+    print(f"{aranan_sayi} sayısı listede bulunmamaktadır.")
+
+# Sonuçları ekrana yazdırıyoruz
+print("Büyükten küçüğe sıralı liste:", sayilar_büyükten_küçüğe)
+print("Liste tersten:", sayilar_tersten)
+
+
+çok boyutlu liste tanımlama
+
+
+aziz sancar = {
+              "adı" :" aziz sancar "
+              " soy_adı " : "sancar"
+              " ırkı " : "türk"
+              " başarıları " : " dna onarımı " 
+              " esinin_adı " : "gwen sancar "
+              " aldıgı_ödül  :  " nobel kimya ödülü " 
+print [ adı , soy_adı " vb. seyler yazdırabilirsin" ]
+ cok lişte varsa 0,1 a,b, gibi grup yapılır ondada örnegin araba[1] gibi belirtmek gerek,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
