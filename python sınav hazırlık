@@ -254,23 +254,142 @@ print [ adı , soy_adı " vb. seyler yazdırabilirsin" ]
  cok lişte varsa 0,1 a,b, gibi grup yapılır ondada örnegin araba[1] gibi belirtmek gerek,
 
 
+rasgele eleman bulma elif if else : 
+
+import random
+
+sınıf_elemanları = ["irem hanım", "melis hanım", "emre bey", "mustafa enes bey", "sakir bey", "bükre hanım", "başkan", "ghaith bey", "tugay bey", "ali bey", "ege bey", "osman bey", "havin hanım", "alperen bey", "samet bey"]
+mevcut = len(sınıf_elemanları) - 1
+rasgele = random.randint(0, mevcut)
+print(sınıf_elemanları[rasgele])
+
+sayı girip islem yapma 
+
+sayı1=int(input("birinci sayıyı gir"))
+sayı2=int(input("ikinçi sayıyı gir"))
+
+islem =input("islem secin (+,-,*,/):")
+sonuc=0
+if islem  == "+"
+sonuc = sayı1 + sayı2 
+
+elif islem == "-"
+sonuc sayı1 - sayı2 
+elif islem == "*"
+sonuc = sayı1 *sayı2
+else: 
+     print("yanlıs islem girdiniz) 
+print(sonuc)
+
+
+
+ANKET 
+
+yas = int(input("yas gir")
+ev = int( "eviniz var mı (Evet/Hayır)")
+araba = int(" arabanız var mı (Evet/Hayır)")
+araç_türü = input("araç türünüz (Togg/tofaş/diger")
+
+puan  = 0
+
+if  yas < 20 :
+puan += 100
+elif yas > 40 
+puan += 50
+else :
+     puan+= 30
+
+
+if ev == "Evet":
+puan+= 30
+if araba =="Evet"
+puan += 50 
+if araç_türü == "Togg"
+puan += 100
+elif  araç_türü == "Tofaş"
+puan += 30
+else : 
+puan += 50
+
+print(f"toplam puannız {puan}")
 
 
 
 
 
+girilen sayılardan en büyügünü bulma 
+
+sayı1=int(input("sayı gir ") 
+sayı2=int(input("sayı gir")
+sayı3= int(input("sayı gir")
+
+
+if sayı1 >= sayı2 and sayı1 >= sayı3 :
+print( [sayı1] , " en büyük sayı " )
+
+elif  sayı2 >= sayı1 and sayı2 >= sayı3 :
+print( [sayı2] , " en büyük sayı " )
+
+elif  sayı3 >= sayı2 and sayı3 >= sayı1 :
+print( [sayı3] , " en büyük sayı " )
 
 
 
 
 
+soru=input("secim yap (sinema/tiyatro)
+ögrenci_indirimi = input("öğrenci misiniz (E/H))
+
+if soru == sinema 
+ucret = 15
+elif soru == "tiyatro"
+ucret=10
+if ögrenci_indirimi == "E"
+ucret = ucret/2
+print(" ödemeniz gereken ücret :"str(ucret))
 
 
 
+adınız  = input("adınızı girin")
+kac_harfli=len(adınız)
+for kez in range(0,kac_harfli):
+print(adınızı [kez])
+
+adınız  = input("adınızı girin")
+kac_harfli=len(adınız)
+for kez in range(0,kac_harfli):
+print(adınız[0])
 
 
+4soru 
 
 
+a) soru_sec = input(sorunuzu secin (a)(b)(c)(d)
+ if soru_sec == "a" :
+
+sayı1 = int(input("sayı gir ")
+sayı2 = int(input("sayı gir" )
+toplam = 0
+for sayılar in range(sayı1,sayı2):
+toplam = toplam+sayılar
+print(f"sayılar toplamı",toplam)
+
+c) 
+
+c=carpım=1
+sayı1=int(input("sayı gir")
+sayı2=int(input("sayı gir")
+for sayilar in range(sayı1,sayı2)
+carpım*=sayılar
+print(carpım)
+
+
+if soru =="ç" :
+ç = toplam = 0
+sayılar = [4,12,18,33]
+for sayı in sayılar
+toplam+= sayı
+print(toplam)
 
 
 
