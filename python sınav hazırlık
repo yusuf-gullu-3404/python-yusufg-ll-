@@ -393,6 +393,457 @@ print(toplam)
 
 
 
+sayi = input("Lütfen 4 basamaklı bir sayı girin: ")
+
+
+if len(sayi) == 4 and sayi.isdigit():
+    
+    binler = sayi[0]
+    yuzler = sayi[1]
+    onlar = sayi[2]
+    birler = sayi[3]
+    
+   
+    print(f"Binler basamağı: {binler}")
+    print(f"Yüzler basamağı: {yuzler}")
+    print(f"Onlar basamağı: {onlar}")
+    print(f"Birler basamağı: {birler}")
+else:
+    print("Lütfen geçerli bir 4 basamaklı sayı girin.")
+
+
+
+
+
+
+hafatanin_gunleri=['haftanın 1.günü:pzt','haftanın 2.günü:salı','haftanın 3.günü:çar','haftanın 4.günü:per','haftanın 5.günü:cum','haftanın 6.günü:cmt','haftanın 7.günü:pzr']
+print(hafatanin_gunleri[0])
+print(hafatanin_gunleri[1])
+print(hafatanin_gunleri[2])
+print(hafatanin_gunleri[3])
+print(hafatanin_gunleri[4])
+print(hafatanin_gunleri[5])
+print(hafatanin_gunleri[6])
+
+
+
+
+
+
+
+
+
+
+
+kullanici_adi=input("kullanıcı adı: ")
+sifre=input("şifre: ")
+if(kullanici_adi!="osman"):
+    print("isim yanlış")
+if(sifre!="1234"):
+    print("şifre yanlış")
+if(kullanici_adi == "osman"):
+    print("isim doğru")
+if(sifre == "1234"):
+    print("şifre doğru")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+istiklal_marsı="""
+Korkma, sönmez bu şafaklarda yüzen al sancak;
+Sönmeden yurdumun üstünde tüten en son ocak.
+O benim milletimin yıldızıdır, parlayacak;
+O benimdir, o benim milletimindir ancak.
+
+Çatma, kurban olayım çehreni ey nazlı hilâl!
+Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+Sana olmaz dökülen kanlarımız sonra helâl,
+Hakkıdır, Hakk’a tapan, milletimin istiklâl.
+"""
+
+istiklal_marsı=istiklal_marsı.lower()
+karaktersilimi=[",","!","?",":",";","."]
+for degis in karaktersilimi:
+    istiklal_marsı=istiklal_marsı.replace(degis,"")
+#print (istiklal_marsı)
+istiklal_marsı=istiklal_marsı.split()
+
+harf_secimi=input("hangi kelime/harfi aramak istiyorsunuz?:").lower()
+toplam=0
+for aranan in istiklal_marsı:
+    if aranan==harf_secimi:
+        toplam+=1
+print("bu metinde toplam",toplam,"adeti",harf_secimi,"vardır?: ")
+
+
+
+
+
+
+import random
+while True:
+ n = random.randint(1, 20)
+ print("Rastgele seçilen ", n)
+ if n % 2 == 0:
+     print("Çift sayı seçildi, döngü bitti")
+     break
+
+import random
+while True:
+ n = random.randint(1, 20)
+ print("Rastgele seçilen ", n)
+ if n % 2 == 0:
+   print("Çift sayı seçildi, döngü bitti")
+   break
+
+
+sayi = int(input("Bir sayı girin: "))
+for i in range(1, 10):
+ if i == sayi:
+   break
+   print(i)
+print("Döngü sona erdi")
+
+
+sayi = int(input("Bir sayı girin: "))
+for i in range(1, 10):
+ if i == sayi:
+  break
+ print(i)
+print("Döngü sona erdi")
+
+
+metin = "Ankara"
+for i in metin:
+ if i == 'r':
+   break
+ print(i)
+
+
+sayilar=[10, 11, 12, 13, 14, 15, 16]
+for aranan in sayilar:
+ print(aranan)
+ if(aranan==14):
+  print("14 sayısı bulundu")
+  break
+
+
+while True:
+    girilensayi=int(input("bir sayı giriniz ve 1'den 5'e kadar olsun:"))
+    if  1 <= girilensayi <= 5 :
+        print(girilensayi,"girildiği için döngü sonda erdi")
+        break
+        
+
+
+
+
+while True:
+    sifre=input("En az 8 haneli bir şifre giriniz:")
+    if len(sifre) >=8 : 
+        print("şifreniz onaylandı")
+        break
+    else:
+        print("Lütfen En az 8 haneli şifre girinizi")
+
+
+
+
+
+harfler = ["a", "b", "c", "d", "e", "f", "g", "h"]  
+
+for harf in harfler:  
+    if harf == "e":
+        print("döngü durdu")
+        break  
+    print(harf)  
+
+
+
+
+
+denemesayisi=0
+while True:
+    sifre=input("Şifreyi giriniz:")
+    denemesayisi+=1
+    if sifre=="Python":
+        print("Giriş Başarılı")
+        print(denemesayisi,"tekrarda girdiniz")
+        break
+    else:
+        print("tekrar deneyiniz")
+
+
+
+
+
+while True:
+    oyunbaslama=input("oyun başlatılsınmı?:")
+    if oyunbaslama=="evet":
+       print("oyun başlatıldı")
+    elif oyunbaslama == "hayır":
+         print ("oyun sona erdi")
+         break
+    oyunadevametme=input("oyuna devam edecek misin: ")
+    if oyunadevametme=="evet":
+       print ("oyun devam ediyor")
+    elif oyunadevametme == "hayır":
+         print("oyun sona erdi")
+         break
+    else:
+         print("Yanlış Cvp evet/hayır yazın")
+
+
+
+toplam=0
+sayac=0
+while True:
+    sayi=int(input("Bir sayı giriniz:"))
+    if sayi == 1:
+        break
+    toplam += sayi
+    sayac+=1
+
+if sayac > 0:
+    print("sayıların ortalaması",toplam / sayac)
+
+
+
+
+def toplama():
+  sayi_adedi = int(input("Kaç tane sayı toplamak istersiniz? "))
+  toplam = 0
+
+  for i in range(sayi_adedi):
+    sayi = float(input(f"{i+1}. sayıyı girin: "))
+    toplam += sayi
+
+  print("Sayıların toplamı:", toplam)
+
+toplama()
+
+
+
+
+
+
+isim=input("İsminizi Giriniz:")
+#isim=["P","Y","T","H","O","N"]
+for ad in isim:
+    print(ad*5)
+
+
+
+
+
+ayilar=[10,11,12,13,14,15,16,17,18,19,20]
+for sayi in sayilar:
+if sayi%3==0:
+print(sayi)
+
+
+
+
+alan_adi=”bilişim”
+toplam=0
+for aranan in alan_adi:
+if aranan==”i”:
+toplam=toplam+1
+print(“Bu metinde toplam “,toplam,” adet i vardır”)
+
+
+
+
+
+i=1
+sonuc=1
+faktoriyel=int(input(“Faktoriyeli hesaplanacak sayıyı giriniz: “))
+while (i<=faktoriyel):
+sonuc=i*sonuc
+i=i+1
+print(“Sonuc=”,sonuc)
+
+
+kullanici_adi=input("kullanıcı adı: ")
+sifre=input("şifre: ")
+if(kullanici_adi!="osman"):
+    print("isim yanlış")
+if(sifre!="1234"):
+    print("şifre yanlış")
+if(kullanici_adi == "osman"):
+    print("isim doğru")
+if(sifre == "1234"):
+    print("şifre doğru")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
