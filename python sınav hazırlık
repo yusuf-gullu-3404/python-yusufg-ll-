@@ -44,17 +44,31 @@ if 'L' in ders
 index.L = none 
 print(index.L)
 
-çalısan kütüphane kodları
+kutuphane=["küçük prens","chalie'ni çikolata fabrikası","Ağaçta bir kuş","Pippi uzun çorap","kırmızı başlıklı kız"]
+ara=input("hangi kitabı araştırmak istiyorsun?: ")
 
-kitap_isimleri = ["kiraz agacı","endülüs","kabe","sscb  ",]
-sayfa_sayıları = [ 203,123,984,564]
-aranacak_kitap = input("hangi kitabı arıyorsunuz ")
-if aranacak_kitap in kitaplar
-siraNo =nkitap_isimleri.index(aranacak_kitap)
-print(aranacak kitap ,"kütüphanede var ",sayfa_sayıları [siraNo] " sayfadır")
+if ara == "küçük prens":
+    print("Küçük Prens kitabı 117 sayfadır.")
+    
+if ara == "chalie'nin çikolata fabrikası":
+    print("Chalie'nin Çikolata Fabrikası kitabı 190 sayfadır.")
+    
+if ara == "ağaçta bir kuş":
+    print("Ağaçta Bir Kuş kitabı 150 sayfadır.")
+    
+if ara == "pippi uzun çorap":
+   print("Pippi Uzun Çorap kitabı 120 sayfadır.")
+    
+if ara == "kırmızı başlıklı kız":
+    print("Kırmızı Başlıklı Kız kitabı 32 sayfadır.")
+    
+else:
+    print("Hayır,listede yok.")
 
-else : 
-print("aranacak kitap bizde yok")
+kutuphane.append(input("hangi kitabı eklemek istiyorsun?: "))
+print (kutuphane)
+
+print(kutuphane.index(input("hangi kitabın hangi sırada olduğunu öğrenmek istiyorsun?: ")))
 
 e-okul not girisi
 
